@@ -1,0 +1,50 @@
+package com.RideSharing.Common.Event;
+
+import java.io.Serializable;
+import java.time.Instant;
+
+public class RideEvent implements Serializable {
+
+    private RideEventType type;
+    private Long rideId;
+    private Long userId;
+    private Long driverId;
+    private Instant timestamp;
+
+    public RideEvent() {}
+
+
+    public RideEvent(
+            RideEventType type,
+            Long rideId,
+            Long userId,
+            Long driverId,
+            Instant timestamp
+    ) {
+        this.type = type;
+        this.rideId = rideId;
+        this.userId = userId;
+        this.driverId = driverId;
+        this.timestamp = timestamp;
+    }
+
+    public RideEventType getType() {
+        return type;
+    }
+
+    public Long getRideId() {
+        return rideId;
+    }
+
+    public Long getUserId() {
+        return userId;
+    }
+
+    public Long getDriverId() {
+        return driverId;
+    }
+
+    public Instant getTimestamp() {
+        return timestamp;
+    }
+}
