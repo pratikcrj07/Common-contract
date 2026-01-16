@@ -1,4 +1,4 @@
-package com.RideSharing.Common.Event.Event;
+package com.RideSharing.Common.Event;
 
 public enum RideEventType {
 
