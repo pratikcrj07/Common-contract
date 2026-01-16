@@ -1,4 +1,4 @@
-package com.RideSharing.Common.Event;
+package com.RideSharing.Common.Event.Event;
 
 import java.io.Serializable;
 import java.time.Instant;
