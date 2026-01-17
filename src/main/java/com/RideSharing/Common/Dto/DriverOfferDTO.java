@@ -8,7 +8,7 @@ public class DriverOfferDTO  implements Serializable {
     private Long rideId;
     private Long driverId;
     private double pickupLat;
-    private double pickupLng;
+    private double pickupLon;
     private double Fare;
     private int timeoutSeconds;
 
@@ -27,7 +27,7 @@ public class DriverOfferDTO  implements Serializable {
         this.driverId = driverId;
         this.pickupLat = pickupLat;
         this.pickupLon = pickupLon;
-        this.estimatedFare = estimatedFare;
+        this.Fare = estimatedFare;
         this.timeoutSeconds = timeoutSeconds;
     }
 
@@ -48,7 +48,7 @@ public class DriverOfferDTO  implements Serializable {
     }
 
     public double getEstimatedFare() {
-        return estimatedFare;
+        return Fare;
     }
 
     public int getTimeoutSeconds() {
@@ -58,8 +58,3 @@ public class DriverOfferDTO  implements Serializable {
 
 
 
-
-
-
-
-}
